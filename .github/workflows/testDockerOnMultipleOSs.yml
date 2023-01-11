@@ -4,44 +4,44 @@ name: test Docker availability on multiple platforms
 run-name: Docker-availability test
 on: [push,pull_request]
 jobs:
-  pop-win32-windows-2022:
+  docker-win32-windows-2022:
     runs-on: windows-2022
     steps:
       - uses: actions/checkout@v3
       - shell: bash
         run: docker run hello-world
-  pop-win32-windows-2019:
+  docker-win32-windows-2019:
     runs-on: windows-2019
     steps:
       - uses: actions/checkout@v3
       - shell: bash
         run: docker run hello-world
-  pop-linux-ubuntu-18-04:
+  docker-linux-ubuntu-18-04:
     runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@v3
       - run: docker run hello-world
-  pop-linux-ubuntu-20-04:
+  docker-linux-ubuntu-20-04:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v3
       - run: docker run hello-world
-  pop-linux-ubuntu-22-04:
+  docker-linux-ubuntu-22-04:
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
       - run: docker run hello-world
-  pop-macosx-macos-10-15:
+  docker-macosx-macos-10-15:
     runs-on: macos-10.15
     steps:
       - uses: actions/checkout@v3
       - run: docker run hello-world
-  pop-macosx-macos-11:
+  docker-macosx-macos-11:
     runs-on: macos-11
     steps:
       - uses: actions/checkout@v3
       - run: docker run hello-world
-  pop-macosx-macos-12:
+  docker-macosx-macos-12:
     runs-on: macos-12
     steps:
       - uses: actions/checkout@v3
